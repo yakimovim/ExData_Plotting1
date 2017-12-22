@@ -91,24 +91,31 @@ date. There should be four PNG files and four R code files.
 
 The four plots that you will need to construct are shown below. 
 
+## Preparing filtered data for two days
+
+Script `two_days_of_household_power_consumption.R` contains code which extracts data only for 2007-02-01 and 2007-02-02 and stores it in the `two_days_of_household_power_consumption.txt` file. This code requires installed `dplyr` and `lubridate` packages. Also it requires `household_power_consumption.txt` file from [Electric power consumption](https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip) archive in the working directory.
+
+## Results
+
+Files `plot1.R`, `plot2.R`, `plot3.R` and `plot4.R` contain R scripts that build images `plot1.png`, `plot2.png`, `plot3.png` and `plot4.png`. Be aware, that these scripts require `dplyr` and `lubridate` packages installed.
 
 ### Plot 1
 
 
-![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2.png) 
+![Global Active Power histogramm](plot1.png) 
 
 
 ### Plot 2
 
-![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3.png) 
+![Global Active Power](plot2.png) 
 
 
 ### Plot 3
 
-![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4.png) 
+![Energy sub mettering](plot3.png) 
 
 
 ### Plot 4
 
-![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5.png) 
+![Dashboard](plot4.png) 
 
